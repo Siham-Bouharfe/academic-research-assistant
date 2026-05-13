@@ -1,14 +1,5 @@
-# agents/collector.py
-
-# from langchain.agents import create_react_agent
-# from langchain.agents import AgentExecutor
-# from langchain.tools import Tool
-# from langchain_core.prompts import PromptTemplate
-# from langchain_ollama import ChatOllama  # ou ChatAnthropic, ChatOpenAI...
 
 # agents/collector.py
-
-from pyexpat.errors import messages
 
 from langchain_ollama import ChatOllama
 from langchain_core.messages import HumanMessage, SystemMessage
@@ -48,8 +39,7 @@ def create_collector_agent(retriever):
             à la question de recherche.
             """)
         ]
-        print(type(llm))
-        print(messages)
+
         response = llm.invoke(messages)
         return response.content
 

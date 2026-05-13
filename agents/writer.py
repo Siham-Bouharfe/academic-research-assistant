@@ -1,13 +1,5 @@
 # agents/writer.py
 
-# from langchain.agents import create_react_agent
-# from langchain.agents import AgentExecutor
-# from langchain.tools import Tool
-# from langchain_core.prompts import PromptTemplate
-# from langchain_ollama import ChatOllama
-
-# agents/writer.py
-
 from langchain_ollama import ChatOllama
 from langchain_core.messages import HumanMessage, SystemMessage
 
